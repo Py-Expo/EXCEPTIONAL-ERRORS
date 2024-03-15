@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Three-Way Layout</title>
+    <style>
+        /* Resetting default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles with background image */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://i.ibb.co/7KffLq2/Whats-App-Image-2024-03-14-at-2-13-55-PM.jpg');
+            /* Replace 'your-background-image-url.jpg' with the URL of your background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header styles */
+        header {
+            background-color: transparent;
+            /* Set background to transparent */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #222;
+            position: relative;
+        }
+
+        /* Logo styles */
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        /* Dropdown styles */
+        .dropdown img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            top: 50px;
+            right: 20px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        /* Container styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        /* Layout styles */
+        .layout {
+            flex: 1;
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Added semi-transparent background color */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Heading styles */
+        h2 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        /* Paragraph styles */
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        /* Button styles */
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+            /* Added margin top */
+            display: block;
+            /* Changed display to block */
+            margin-left: auto;
+            /* Move button to the right */
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        /* Textarea styles */
+        textarea {
+            width: calc(100% - 40px);
+            /* Adjusted width */
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1.1rem;
+            resize: none;
+            margin-right: 20px;
+            /* Added margin right */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img class="logo" src="https://i.ibb.co/Rzj0sSM/logo.jpg" alt="Logo">
+    <h1>Minvazhi Thoodhu</h1>
+    <div class="dropdown">
+        <img src="https://i.ibb.co/10L3G9p/a4e212915d068b27b18dd36ad73bfb19.jpg" alt="Dropdown Image">
+        <div class="dropdown-content">
+            <a href="">Profile</a>
+            <a href="">Settings</a>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="layout">
+        <h2>Event Calendar</h2>
+        <button onclick="redirectToEventPage()">Add Event</button>
+
+        
+
+    </div>
+    <div class="layout">
+        <h2>Daily Updates</h2>
+        <p>Get the latest news and announcements.</p>
+        <textarea rows="4" placeholder="Enter your comment here..."></textarea>
+        <button>Add</button> <!-- Moved the button below the textarea -->
+    </div>
+    <div class="layout">
+        <h2>Chat corner</h2>
+        <p>Connect with like-minded individuals and organizations.</p>
+    </div>
+    <div class="layout">
+        <h2>News Feed</h2>
+        <p>Stay informed with the latest news and updates.</p>
+
+        
+        
+        
+
+        <iframe src="http://feeds.bbci.co.uk/news/rss.xml" >
+        </iframe>
+    </div>
+</div><script>function redirectToEventPage() {
+    window.location.href = "event.html";
+}
+</script>
+</body>
+</html>
+
+

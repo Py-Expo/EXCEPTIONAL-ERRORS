@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            /* Setting the background image */
+            background-image: url('https://i.ibb.co/QjQssQR/ac073fa0593263e41ac2c7148f20b2a7.jpg');
+            /* You can also set other background properties like repeat, size, position, etc. */
+            background-repeat: no-repeat;
+            background-size: cover; /* Adjust according to your preference */
+            background-position: center; /* Adjust according to your preference */
+            font-family: Arial, sans-serif; /* Use a commonly available font for better compatibility */
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+            width: 300px; /* Adjust according to your preference */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="submit"],
+        input[type="integer"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="text" name="firstname" placeholder="Firstname">
+            <input type="text" name="lastname" placeholder="Lastname">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="integer" name="mobile number" placeholder="Mobile number" required maxlength="10">
+            <input type="password" name="password" placeholder="Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must contain at least one number, one uppercase letter, one lowercase letter, and be at least 8 characters long." >
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+</body>
+</html>

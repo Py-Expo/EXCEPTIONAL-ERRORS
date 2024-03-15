@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        body {
+            /* Setting the background image */
+            background-image: url('https://i.ibb.co/QjQssQR/ac073fa0593263e41ac2c7148f20b2a7.jpg');
+            /* You can also set other background properties like repeat, size, position, etc. */
+            background-repeat: no-repeat;
+            background-size: cover; /* Adjust according to your preference */
+            background-position: center; /* Adjust according to your preference */
+            font-family: Arial, sans-serif; /* Use a commonly available font for better compatibility */
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        #signin{
+            height:30px;
+            width:180px;
+            color:white;
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign In</h1>
+        <form>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <a href="./homepage.html"><button id="signin">Sign In </a></button>
+            <p>Don't have an account?</p>
+            <a href="./signuppage.html"><button id="signin">Sign Up </a></button>
+        </form>
+    </div>
+</body>
+</html>
